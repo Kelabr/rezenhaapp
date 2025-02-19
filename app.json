@@ -10,8 +10,8 @@
   "android": {
     "package": "com.rezenha.app",
     "adaptiveIcon": {
-      "foregroundImage": "./assets/adaptive-icon.png",
-      "backgroundColor": "#ffffff"
+      "foregroundImage": "./assets/adaptive-foreground.png",
+      "backgroundColor": "#101728"
     }
   },
   "ios": {
@@ -21,9 +21,15 @@
   "splash": {
     "image": "./assets/splash-icon.png",
     "resizeMode": "contain",
-    "backgroundColor": "#ffffff"
+    "backgroundColor": "#101728"
   },
   "web": {
     "favicon": "./assets/favicon.png"
-  }
+  },
+  "extra": {
+    "eas": {
+      "projectId": "997809f7-b277-4965-9236-857a2c53278e"
+    }
+  },
+  "owner": "kel04"
 }

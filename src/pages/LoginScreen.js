@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
     paddingRight:20,
     flexDirection:'column',
     alignItems:'center',
-    color:'#101728'
+    color:'#101728',
   },
   title:{
     fontSize:20,
@@ -112,14 +112,18 @@ const styles = StyleSheet.create({
     borderRadius:20,
     paddingLeft:20,
     borderColor:"#101728",
-    borderWidth:1.5
+    borderWidth:1.5,
+    height: 45,
+    width:"100%"
 
   },
 
   boxtextInput:{
     marginTop:30,
     paddingLeft:30,
-    paddingRight:30
+    paddingRight:30,
+    width:"100%",
+    alignItems:'center'
 
   }
 
