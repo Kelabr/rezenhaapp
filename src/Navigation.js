@@ -6,7 +6,8 @@ import { auth } from "./firebaseConfig";
 
 import LoginScreen from "./pages/LoginScreen"; // Criamos essa tela já já
 import HomeScreen from "./pages/HomeScreen"; // Tela após login
-import RegisterScreen from "./pages/RegisterScreen";
+import RegisterScreen from "./pages/RegisterScreen"; //Tela de registro
+import GameScreen from "./pages/GameScreen"; //Tela do game
 
 const Stack = createStackNavigator();
 
@@ -25,7 +26,10 @@ export default function Navigation() {
     <NavigationContainer>
       <Stack.Navigator screenOptions={{ headerShown: false }}>
         {user ? (
-          <Stack.Screen name="Home" component={HomeScreen} />
+          <>
+            <Stack.Screen name="Home" component={HomeScreen} />
+            <Stack.Screen name="Game" component={GameScreen} />  
+          </>
         ) : (
           <>
             <Stack.Screen name="Login" component={LoginScreen} />

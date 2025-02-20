@@ -10,7 +10,7 @@
   "android": {
     "package": "com.rezenha.app",
     "adaptiveIcon": {
-      "foregroundImage": "./assets/adaptive-foreground.png",
+      "foregroundImage": "./assets/adaptive-icon.png",
       "backgroundColor": "#101728"
     }
   },

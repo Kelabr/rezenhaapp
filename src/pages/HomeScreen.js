@@ -3,14 +3,13 @@ import { View, Text, Button, StyleSheet, TouchableOpacity, Image } from "react-n
 import { signOut } from "firebase/auth";
 import { auth } from "../firebaseConfig";
 
-export default function HomeScreen() {
+export default function HomeScreen({navigation}) {
   return (
     <View style={styles.contain}>
-      <Text>Bem-vindo ao Rezenhar!</Text>
       <View style={styles.boxImg}>
         <Image source={require('../img/logo_branco.png')}/>
       </View>
-      <TouchableOpacity style={styles.card}>
+      <TouchableOpacity style={styles.card} onPress={() => navigation.navigate("Game")}>
         <View style={{display:'flex', flexDirection:'row'}}>
           <Image style={styles.imgCard} source={require('../img/icone_cartas.png')}/>
           <Text style={styles.textCard}>Galera</Text>
@@ -31,7 +30,8 @@ const styles = StyleSheet.create({
     backgroundColor:'#101728',
     height:'100%',
     paddingLeft:20,
-    paddingRight:20
+    paddingRight:20,
+    paddingTop:15
   },
   boxImg:{
     display:'flex',
